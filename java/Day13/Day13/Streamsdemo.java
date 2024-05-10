@@ -21,20 +21,20 @@ public class Streamsdemo {
 
         evenValuesList=l1.stream().filter(n->n%2==0).collect(Collectors.toList());
 
-        System.out.println(l1);
-        System.out.println(evenValuesList);
+        System.out.println("List" + l1);
+        System.out.println("Even Values - "+evenValuesList);
 
         l1.stream().filter(n->n%2==0).forEach(n-> System.out.println());
 
-        List<String>n=Arrays.asList("A","B","C","DE");
-        List<String>names=new ArrayList<>();
-
-        n.stream().filter(str->str.length()>6 && str.length()<8).forEach(System.out::println);
+//        List<String>n=Arrays.asList("A","B","C","DE");
+//        List<String>names=new ArrayList<>();
+//
+//        n.stream().filter(str->str.length()>6 && str.length()<8).forEach(System.out::println);
 
 
         List<String>words = Arrays.asList("Cup",null,"forest","sky","book",null,"theatre");
 
         List<String>result=words.stream().filter(w-> w!=null).collect(Collectors.toList());
-        System.out.println(result);
+        System.out.println("Checking Nulls" + result);
 }
 }

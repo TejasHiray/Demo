@@ -20,7 +20,7 @@ public class Mapdemo2 {
 //convert it into uppercase
         vehicleListinUpperCase=vehicle.stream().map(name->name.toUpperCase()).collect(Collectors.toList());
 
-        System.out.println(vehicleListinUpperCase);
+        System.out.println("Coverted into uppercase" + vehicleListinUpperCase);
 
 
 

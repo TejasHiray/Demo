@@ -24,7 +24,7 @@ public class Streamdemo2 {
 
         List.stream()
                 .filter(p->p.price>23000)
-                .forEach(pr-> System.out.println(pr.price));
+                .forEach(pr-> System.out.println("Mobiles Price-"+pr.price));
 
 
     }
