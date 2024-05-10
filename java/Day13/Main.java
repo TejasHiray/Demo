@@ -1,11 +1,4 @@
-import Day13.Streamdemo2;
-import Day13.Streamsdemo;
-import Day13.Mapdemo2;git
-
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-
+import Day13.*;
 
 
 public class Main {
@@ -19,10 +12,17 @@ public class Main {
         Mapdemo2 mapDemo = new Mapdemo2();
         mapDemo.main(args);
 
+        Mapdemo1 mapdemo1 = new Mapdemo1();
+        mapdemo1.main(args);
+
+
+        Filter_Map filter_map=new Filter_Map();
+        filter_map.main(args);
+
 
 
 
 
     }
 
-    }
+}
