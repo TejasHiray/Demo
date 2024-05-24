@@ -1,6 +1,6 @@
 package com.java.training1.dto;
 
-public class ResponseDto {
+public class ResponseDto<S> {
     private String fromUnit;
     private String toUnit;
     private double originalValue;

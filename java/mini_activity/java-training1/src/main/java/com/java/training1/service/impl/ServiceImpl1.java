@@ -4,8 +4,16 @@ import com.java.training1.constant.ConstantClass;
 import com.java.training1.dto.RequestDto;
 import com.java.training1.dto.ResponseDto;
 import com.java.training1.service.ServiceConversion;
+import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.function.Function;
+
+
+@Service
 public class ServiceImpl1 implements ServiceConversion {
+    private final Map<String,Function<Double,Double>> conversionMap=new HashMap<>();
 
 
     public ResponseDto convert(RequestDto request) {

@@ -1,4 +1,4 @@
-package com.java.training1.dto.controller;
+package com.java.training1.controller;
 
 
 

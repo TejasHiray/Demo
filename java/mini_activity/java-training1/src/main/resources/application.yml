@@ -1,6 +1,6 @@
 
 server:
-  port: 9004
+  port: 8080
 
 spring:
   application:
@@ -11,21 +11,19 @@ logging:
     root: INFO
     com.example.unit conversion: DEBUG
 
-# Additional configuration can be added here as needed
 
-# Uncomment and configure this section if you have database settings
 # datasource:
-#   url: jdbc:mysql://localhost:3306/unitconversiondb
-#   username: yourusername
-#   password: yourpassword
+#   url: jdbc:mysql://localhost:3306/interconversion
+#   username: host
+#   password: Tejas@1410
 #   driver-class-name: com.mysql.cj.jdbc.Driver
 #   hikari:
 #     maximum-pool-size: 10
-
-# Uncomment and configure this section if you have specific security settings
+#
+#
 # security:
 #   basic:
 #     enabled: false
 
-# Additional configurations can be added as needed
+
 
