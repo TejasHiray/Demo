@@ -1,4 +1,4 @@
-package com.java.training1.controller;
+package com.java.training1.dto.controller;
 
 
 
@@ -6,10 +6,7 @@ import com.java.training1.dto.RequestDto;
 import com.java.training1.dto.ResponseDto;
 import com.java.training1.service.ServiceConversion;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 
 @RestController
@@ -19,16 +16,20 @@ public class Controller {
     @Autowired
     private ServiceConversion serviceConversion;
 
+    @GetMapping
+    public ResponseDto convert(
+            @RequestParam String fromUnit,
+            @RequestParam String toUnit,
+            @RequestParam double value){
 
-    @PostMapping
+        RequestDto requestDto=new RequestDto();
+        requestDto.setFromUnit(fromUnit);
+        requestDto.setToUnit(toUnit);
+        requestDto.setValue(value);
 
 
-
-    public ResponseDto convert (@RequestBody RequestDto requestDto){
         return ServiceConversion.convert(requestDto);
+
     }
-
-
-
 
 }
